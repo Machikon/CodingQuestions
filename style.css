@@ -8,8 +8,9 @@ body{
 
 header {
     text-align: left;
-  
+     
 }
+
 
 h1{
     background-color: rgb(208, 234, 144);
@@ -46,9 +47,10 @@ ul{
 
 }
 #questions{
-    text-align: center;
+    text-align: center;   
     display: block; 
 }
+
 
 button#answer1{
     display: block;
@@ -89,3 +91,8 @@ button#answer4{
     color: bisque;
     font-size: 1.2rem;
 }
+
+form label{
+
+}
+

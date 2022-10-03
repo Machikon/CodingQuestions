@@ -1,12 +1,46 @@
 
 // 5 min questions
 
-var startBtn = document.querySelector("#start");
-var wordDisplayH2 = document.querySelector("question-display");
+var startBtn = document.getElementById("#start");
+var questions = document.querySelector("#questions").length;
 var timeLeftSpan = document.querySelector("#time-left");
-var isPlaying = false;
+var isPlaying = true;
 var timeLeft = 60;
 var wins = localStorage.getItem("wins")||0;
+var score = 0; 
+
+
+// Start the coding questions by clicking Start button. 
+//Set timer once the user clicks on the start button.
+
+startBtn.addEventListener("click", isPlaying);
+function isPlaying() {
+    console.log("game started!");
+    startBtn.id.add("hide");
+    questions.id.remove("hide");
+    setNextQuestion()
+
+
+    isPlaying === true.show();  
+    timeLeft = 30;
+    clearInterval(timer);
+}
+
+// user picks a wrong answer, then time is subttracted from the clock.
+
+    timer = setInterval(function () {
+    timeLeft--; 
+    timeLeftSpan.textContent = timeLeft;
+    if (timerLeft === 0) {
+        clearInterval(timer);
+        isPlaying =false;
+    }
+}, 800);
+
+    function selectAnswer(){
+
+    }
+
 
 var questions = [
     {
@@ -50,35 +84,9 @@ var questions = [
         answer:1,
     }
 
-    
 
-var score = 0;
-
-
-
-// Set timer once the user clicks on the start button.
-startBtn.addEventListener("click", function () {
-    startBtn.style.display:"none";
-    }
-    console.log("game started!");
-    isPlaying = true;  
-    timeLeft = 30;
-    clearInterval(timer);
-    timer = setInterval(function () {
-    timeLeft--; 
-    timeLeftSpan.textContent = timeLeft;
-    if (timerLeft === 0) {
-        clearInterval(timer);
-        isPlaying =false;
-
-          
-    }
-}, 1000); 
-    
-
-
-// user picks a choice.
-for(var i=0; i < questions.length; i++){
+// user select an answer.
+for (var i=0; i < questions.length; i++){
     var response = prompt (questions[i].prompt);
     if (response === questions[i].answer){
         score++;
@@ -88,7 +96,17 @@ for(var i=0; i < questions.length; i++){
         }  
 }
 // present another question.
-// user picks a wrong answer, then time is subttracted from the clock.
+
+questions.setattribute("#questions","questions[i]");
+
+
 // Game ends when all questions are answered or time reaches to 0.
+if ()
+
 // when game ends, I can save my initials and score. (getItems/setItems)
-input
+function initialStorage(){
+    localStorage.setItem("initial", "text");
+    localStorage.setItem("highscore", "highScore");
+}
+
+

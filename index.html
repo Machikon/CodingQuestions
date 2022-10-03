@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <title>Coding Questions</title>
 </head>
+
 <body>
     <header>
-        <a href="/score.html">View Hight Scores</a>
-        <a href="/time.html">Time Left</a>
+        <h3>View Hight Scores: <span id="high-score"></span>
+        <h3>Time Left: <span id="time-left"></span></h3>
     </header>
 
     <div>
@@ -30,42 +31,37 @@
             <div id= "questionBtn"></div>
 
     </div>
-        
-       
-      
-               
+
+
+        <div>
+
+
         </div>
 
 
-        <div class = "question-display"></div>
+        <div class = "question-display">
+            <h2>All done!</h2>
             <h3 id="score">Your final score is</h3>
-              <form method="post">
+            <form method="post">
               <label for="initial">Enter initial:</label>
+              <input type="text">
+              <button id="submit">submit</button>
             </form>
-            <button class="submit">submit</button>
-            console.log()
+                        
+        </div>
 
-        </main>
-        
-        <aside>
-            <div id="timer-box">
-                <section id="time">
-                    <h3>
-                        "Time Left: "
-                        <span id="time-left"></span>
-                    </h3>
-
-               </section>
-
-
-        </aside>
-       
-
-
+        <div class = "High-Score">
+            <h2>High Scores</h2>
+            <output high-score = "highScore"></output>  
+            <button id="goback">Go Back</button>
+            <button id="ClearHighScores">Clear High Scores</button>
 
         </div>
 
+
        
+        
+       >                
     <script src="script.js"></script>
 
 </body>
