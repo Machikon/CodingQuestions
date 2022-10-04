@@ -16,29 +16,23 @@
 
     <div>
         <h1 id="welcome">Welcome to Coding Questions!</h1>
+        <div id="intro">
         <p>Please answer the following five questions before your time runs out. If you answer a question wrong, your remaining time will be cut down by 10 seconds.</p>
         <button id="start">Start Quiz</button>
+        </div>
 
     </div>
     
     <div id="question-container">
-        <h3  id="questions"> Questions Here</h3>
-            <button id="answer1">answer-1</button>  
-            <button id="answer2">answer-2</button>  
-            <button id="answer3">answer-3</button>  
-            <button id="answer4">answer-4</button> 
-
-            <div id= "questionBtn"></div>
-
+        <h3  id="question" class="response"> Questions Here</h3>
+            <button id="answer1" class = "choice">answer-1</button>  
+            <button id="answer2" class = "choice">answer-2</button> 
+            <button id="answer3" class = "choice">answer-3</button> 
+            <button id="answer4" class = "choice">answer-4</button>  
     </div>
 
-
-        <div>
-
-
-        </div>
-
-
+                    
+    
         <div class = "question-display">
             <h2>All done!</h2>
             <h3 id="score">Your final score is</h3>
@@ -50,6 +44,8 @@
                         
         </div>
 
+        <div id="timer"></div>
+            
         <div class = "High-Score">
             <h2>High Scores</h2>
             <output high-score = "highScore"></output>  
