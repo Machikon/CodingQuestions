@@ -124,10 +124,13 @@ function startGame() {
 
 
 // //Set timer 
-var timer = setInterval(function()startGame,1000);
-clearInterval(timer);
+// var timer = setInterval(function()(
+//     timeLeft--; 
+// clearInterval(timer);
 
-
+// game over when time runs out
+// if (timeLeft ==0) {
+//     clearInterval(timer);
 
 // // user chooses an answer
     // choiceBox.addEventListener("click", setNextQuestion);
@@ -137,9 +140,7 @@ clearInterval(timer);
         
 // } //end startGame() function
   
-// game over when time runs out
-// if (timeLeft ==0) {
-//     clearInterval(timer);
+
     
 
    
