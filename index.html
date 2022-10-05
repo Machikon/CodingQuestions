@@ -25,10 +25,13 @@
     
     <div id="question-container">
         <h3  id="question" class="response"> Questions Here</h3>
-            <button id="answer1" class = "choice">answer-1</button>  
-            <button id="answer2" class = "choice">answer-2</button> 
-            <button id="answer3" class = "choice">answer-3</button> 
-            <button id="answer4" class = "choice">answer-4</button>  
+            <div id="choice-box">
+                <button id="answer1" class = "choice">answer-1</button>  
+                <button id="answer2" class = "choice">answer-2</button> 
+                <button id="answer3" class = "choice">answer-3</button> 
+                <button id="answer4" class = "choice">answer-4</button>  
+                <button id="correct" class = "choice">answer-5</button>  
+            </div>
     </div>
 
                     
@@ -38,7 +41,7 @@
             <h3 id="score">Your final score is</h3>
             <form method="post">
               <label for="initial">Enter initial:</label>
-              <input type="text">
+              <input type="text" id="player">
               <button id="submit">submit</button>
             </form>
                         

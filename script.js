@@ -1,6 +1,6 @@
 
 // make 5 code questions
-var quustionsIndex = 0;
+var questionsIndex = 0;
 var startBtn = document.getElementById("start");
 var timeLeftSpan = document.querySelector("#time-left");
 var questionH3 = document.querySelector("#question");
@@ -8,15 +8,18 @@ var answerBtn1 = document.querySelector("#answer1");
 var answerBtn2 = document.querySelector("#answer2");
 var answerBtn3 = document.querySelector("#answer3");
 var answerBtn4 = document.querySelector("#answer4");
-var choice = document.querySelector(".choice");
+var correctBtn = document.querySelector("#correct"); 
+var choiceBox = document.querySelector("#choice-box");
 var intro = document.querySelector("#intro");
-var timeLeft = 20;
+var timeLeft = 30;
 var timer;
+var submitBtn = document.querySelector("#submit");
 var wins = localStorage.getItem("wins")||0;
 var score = 0; 
 var correctAnswer = 0;
 var wrongAnswer = [];
 var goback = document.querySelector("#goback");
+var questionsIndex = 0;
 
 // TODO: change the questions.correct to the value of the eight choice
 // TODO: we want loop through the questions array and create buttons forEach() || for loop
@@ -76,42 +79,69 @@ function startGame() {
     console.log("game started!");
     intro.style.display = "none";
      
+    
+    
     questionH3.textContent = questions[questionsIndex].question;
-         
+   
     answerBtn1.textContent = questions[questionsIndex].response1;
     answerBtn2.textContent = questions[questionsIndex].response2;
     answerBtn3.textContent = questions[questionsIndex].response3;
     answerBtn4.textContent = questions[questionsIndex].response4;
-    console.log(questions[0].question);
-
-    function checkAnswer(response){
-        if(questions[questionH3].correct == response)
-        score++;
-        }
-
-        for (let i = 0; i < questions.length; i++) {
-            console.log("picked my answer");
+    
+    correctBtn.textContent = questions[questionsIndex].correct;
+    console.log(questions[questionsIndex].question);
+}
             
-        }
+    Event.Target.style.visibility ="hidden";
+    choiceBox.addEventListener("click", function(event){
+       var element = event.target;
+        
+        })
+
+    // for (i = 0; i < questions.length; i++){
+    //     if (element.textContent==correctBtn.textContent){
+    //         console.log("worked");
+
+        // console.log(element.textContent);
+        // console.log(correctBtn.textContent);
+
+    //     if(element==questions[questionsIndex].correct){
+    //         console.log("test")
+        
+    // })
+   
+    // function checkAnswer(response){
+    //     if(questions[questionsIndex].correct == response)
+    //     score++;
+    //     } else {
+    //     score--;
+    //     }
+
+    //     for (let i = 0; i < questions.length; i++) {
+            
+            
+    
 
 
-//Set timer 
-var timer = setInterval(startGame,1000);
+// //Set timer 
+var timer = setInterval(function()startGame,1000);
 clearInterval(timer);
 
+
+
 // // user chooses an answer
-    choice.addEventListener("click", setNextQuestion());
+    // choiceBox.addEventListener("click", setNextQuestion);
 
 // // present another question  
 
         
-} //end startGame() function
+// } //end startGame() function
   
 // game over when time runs out
-if (timeLeft ==0) {
-    clearInterval(timer);
+// if (timeLeft ==0) {
+//     clearInterval(timer);
     
-}
+
    
 
 // user picks a wrong answer, then time is subttracted from the clock.
@@ -126,18 +156,33 @@ if (timeLeft ==0) {
 
 
 
-
 // // Game ends when all questions are answered or time reaches to 0.
 // if ()
 
-// // when game ends, I can save my initials and score. (getItems/setItems)
-// function initialStorage(){
-//     localStorage.setItem("initial", "text");
-//     localStorage.setItem("highscore", "highScore");
-// }
-// Go back 
-reset();
+// // // when game ends, I can save my initials and score. (getItems/setItems)
+
+// // submitBtn.addEventListener("submit", (event)=>{
+
+// addbtn.addEventListener("click", function({
+//     if (initial!== 0 ){
+//         score:++;
+        
+//     player.textContent = initial        
+//     storedPlayer = localStorage.setItem("initial", initial); 
+//         }        
+        
+        localStorage.setItem("highscore","");
     
-// Clear High Scores
+    
+// });
+
+// // read the local storage item.
+    const initial = localStorage.getItem("initial");
+
+// // Go back 
+    // return();
+    
+// // Clear High Scores
+    localStorage.removeItem('highscore');
 
 
