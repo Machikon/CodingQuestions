@@ -12,5 +12,8 @@ There is an introductory page with a start button. Once the start button is clic
 
 
 URL (GitHub Pages): 
+https://machikon.github.io/CodingQuestions/
 
 Screen shots
+![image](https://user-images.githubusercontent.com/106935371/193984902-c874ade7-1b5e-4a6a-aaf6-fc6eb23c27ef.png)
+![image](https://user-images.githubusercontent.com/106935371/193984960-b4fde1ef-12ac-49aa-aa68-e1ebbf5829e4.png)
