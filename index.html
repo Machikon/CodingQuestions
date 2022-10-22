@@ -10,8 +10,8 @@
 
 <body>
     <header>
-        <h3>View Hight Scores: <span id="high-score"></span>
-        <h3>Time Left: <span id="time-left"></span></h3>
+        <h2>View Hight Scores: <span id="high-score"></span></h2>
+        <h2>Time Left: <span id="time-left"></span></h2>
     </header>
 
     <div>
@@ -30,7 +30,7 @@
                 <button id="answer2" class = "choice">answer-2</button> 
                 <button id="answer3" class = "choice">answer-3</button> 
                 <button id="answer4" class = "choice">answer-4</button>  
-                <button id="correct" class = "choice">answer-5</button>  
+                <p id="correct" class = "choice"></p>  
             </div>
     </div>
 
@@ -39,6 +39,7 @@
         <div class = "question-display">
             <h2>All done!</h2>
             <h3 id="score">Your final score is</h3>
+            <div id="timer"></div>
             <form method="post">
               <label for="initial">Enter initial:</label>
               <input type="text" id="player">
@@ -47,9 +48,8 @@
                         
         </div>
 
-        <div id="timer"></div>
-            
-        <div class = "High-Score">
+        
+        <div class = "high-score">
             <h2>High Scores</h2>
             <output high-score = "highScore"></output>  
             <button id="goback">Go Back</button>

@@ -19,6 +19,10 @@ h1{
     padding: 30px;
 }
 
+h3{
+    font-size: 2rem;
+}
+
 p{
     margin: auto;
     padding: 20px;
@@ -46,6 +50,7 @@ ul{
     text-align: center;
 
 }
+
 #questions{
     text-align: center;   
     display: block; 
