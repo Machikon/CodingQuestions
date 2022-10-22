@@ -163,4 +163,23 @@ function displayFinalScore() {
     questionContainer.style.display = "none"
     questionDisplay.style.display = "block"
     clearInterval(timerObj)
+    document.getElementById("timer").textContent = `Right answer: ${score} + Time Left:${timeLeft} = ${timeLeft+score}`
+
 }
+
+submitBtn.addEventListener("click",function(event){
+    event.preventDefault()
+    var highScoresStored = JSON.parse(localStorage.getItem("codeQuiz")) || []
+    highScoresStored.push({
+        user: document.getElementById("player").value,
+        score: timeLeft+score
+    })
+    localStorage.setItem("codeQuiz",JSON.stringify(highScoresStored))
+    questionDisplay.style.display = "none"
+highScore.style.display = "block";
+var htmlCode =""
+for(let i=0;i<highScoresStored.length;i++){
+    htmlCode+= `<div>User:${highScoresStored[i].user} ------ Score:${highScoresStored[i].score}</div>`
+}
+document.getElementById("highScoredisplay").innerHTML = htmlCode;
+})

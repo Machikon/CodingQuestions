@@ -38,9 +38,9 @@
     
         <div class = "question-display">
             <h2>All done!</h2>
-            <h3 id="score">Your final score is</h3>
-            <div id="timer"></div>
-            <form method="post">
+            <h3 id="score">Your final score is : <span id="timer"></span></h3>
+           
+            <form>
               <label for="initial">Enter initial:</label>
               <input type="text" id="player">
               <button id="submit">submit</button>
@@ -51,7 +51,7 @@
         
         <div class = "high-score">
             <h2>High Scores</h2>
-            <output high-score = "highScore"></output>  
+            <section id = "highScoredisplay"></section>  
             <button id="goback">Go Back</button>
             <button id="ClearHighScores">Clear High Scores</button>
 
