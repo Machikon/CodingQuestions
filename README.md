@@ -15,5 +15,8 @@ URL (GitHub Pages):
 https://machikon.github.io/CodingQuestions/
 
 Screen shots
-![image](https://user-images.githubusercontent.com/106935371/193984902-c874ade7-1b5e-4a6a-aaf6-fc6eb23c27ef.png)
-![image](https://user-images.githubusercontent.com/106935371/193984960-b4fde1ef-12ac-49aa-aa68-e1ebbf5829e4.png)
+![image](https://user-images.githubusercontent.com/106935371/203454080-6e2c360c-c8ed-4e98-8822-f015b6abda45.png)
+![image](https://user-images.githubusercontent.com/106935371/203454113-47723c5b-71c8-43ab-881e-48142197eef3.png)
+![image](https://user-images.githubusercontent.com/106935371/203454152-fbf7e3b1-0726-4470-a766-896f7dae8f65.png)
+
+
